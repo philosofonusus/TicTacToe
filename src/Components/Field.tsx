@@ -6,6 +6,11 @@ import {useState} from "react";
 const Field = <T extends { coordinate: number }>(props: T) => {
     const turn = useSelector((state: any) => state.turn)
     const grid = useSelector((state: any) => state.field)
+    const border = () => {
+        return props.coordinate === 1 || props.coordinate === 7 ? 'bl br'
+            : props.coordinate === 3 || props.coordinate === 5  ? 'bt bb'
+                : props.coordinate === 4 ? "bb bt br bl" : ""
+    }
     const [content, setContent] = useState('')
     const dispatch = useDispatch()
 
@@ -28,7 +33,7 @@ const Field = <T extends { coordinate: number }>(props: T) => {
     }
 
     return (
-        <div className="grid__field" onClick={put}>
+        <div className={`grid__field ${border()}`} onClick={put}>
             <h1>{content}</h1>
         </div>
     )

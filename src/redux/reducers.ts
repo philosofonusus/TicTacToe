@@ -36,10 +36,10 @@ const turnReducer =
 }
 
 const gameEndReducer =
-    <T extends { type: string}>(state: PLAYER | 'DRAW' | null = null, action: T) => {
+    <T extends { type: string}>(state: PLAYER | 'D' | null = null, action: T) => {
         switch (action.type){
             case DRAW:
-                return "DRAW"
+                return "D"
             case WINNER_O:
                 return "O"
             case WINNER_X:

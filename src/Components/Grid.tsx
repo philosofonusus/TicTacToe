@@ -10,9 +10,9 @@ const Grid:React.FC = () => {
     const dispatch = useDispatch()
     const check = Check(grid)
     useEffect(() => {
-        switch (check){
+        switch (check) {
             case 'D':
-                setDraw()
+                dispatch(setDraw())
                 break
             case 'X':
                 dispatch(setWinnerX())
@@ -23,7 +23,7 @@ const Grid:React.FC = () => {
             default:
                 console.log('NO WINNER')
         }
-    },[grid, check, dispatch])
+    },[grid, check])
     return (
         <div className="grid">
             {[0, 1, 2, 3, 4, 5, 6, 7, 8].map(el => {
