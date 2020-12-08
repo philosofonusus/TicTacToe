@@ -1,20 +1,33 @@
+$grid-size: 300px;
+
 * {
     color: white
 }
-.App{
+.btn-reset{
+    padding: 15px;
+    margin: 40px auto;
     display: flex;
     justify-content: center;
-    margin-top: calc(50vh - 200px);
+    background-color: white;
+    align-content: center;
+    color: black;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.btn-reset:active {
+    color: gray;
 }
 .grid {
+    width: $grid-size;
+    height: $grid-size;
     display: grid;
-    max-width: 18.75rem;
-    max-height: 18.75rem;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     .grid__field {
-        width: 6.25rem;
-        height: 6.25rem;
+        width: $grid-size / 3;
+        height: $grid-size / 3;
         cursor: pointer;
         display: flex;
         justify-content: center;
@@ -35,4 +48,19 @@
 }
 .bt{
     border-top: 5px solid white;
+}
+.container{
+    margin: 10vh auto 0;
+    width: $grid-size;
+}
+.gameOver{
+    text-align: center;
+    font-size: 5rem;
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+}
+.score-board h1{
+    padding: 0 20px;
 }

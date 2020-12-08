@@ -1,8 +1,7 @@
-import {PLAYER} from "./reducers";
-
 export const PUT_O = 'PUT_O'
 export const PUT_X = 'PUT_X'
 export const SWITCH_TO_X = 'SWITCH_TO_X'
+export const RESET = "RESET"
 export const SWITCH_TO_O = 'SWITCH_TO_O'
 export const DRAW = "DRAW"
 export const WINNER_O = "WINNER_O"
@@ -55,5 +54,11 @@ export const setWinnerX = () => {
 export const setDraw = () => {
     return{
         type: DRAW
+    }
+}
+
+export const gameReset = () => {
+    return{
+        type: RESET
     }
 }

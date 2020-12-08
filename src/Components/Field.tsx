@@ -11,7 +11,6 @@ const Field = <T extends { coordinate: number }>(props: T) => {
             : props.coordinate === 3 || props.coordinate === 5  ? 'bt bb'
                 : props.coordinate === 4 ? "bb bt br bl" : ""
     }
-    const [content, setContent] = useState('')
     const dispatch = useDispatch()
 
     const put = (e: any) => {
@@ -20,11 +19,9 @@ const Field = <T extends { coordinate: number }>(props: T) => {
             console.log(grid)
             if (turn === "X") {
                 dispatch(putX(props.coordinate))
-                setContent(turn)
                 dispatch(O_turn())
             } else if (turn === "O") {
                 dispatch(putO(props.coordinate))
-                setContent(turn)
                 dispatch(X_turn())
             }
         } else {
@@ -34,7 +31,7 @@ const Field = <T extends { coordinate: number }>(props: T) => {
 
     return (
         <div className={`grid__field ${border()}`} onClick={put}>
-            <h1>{content}</h1>
+            <h1>{grid[props.coordinate]}</h1>
         </div>
     )
 };
