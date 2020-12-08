@@ -3,11 +3,9 @@ import 'normalize.css'
 import './App.css';
 import Grid from "./Components/Grid";
 import {useSelector} from "react-redux";
-import {Store} from "redux";
 
 const App: React.FC = () => {
-    //@ts-ignore
-    const gameEnd = useSelector((state: Store) => state.endGame)
+    const gameEnd = useSelector((state: any) => state.endGame)
   return (
     <div className="App">
         {
