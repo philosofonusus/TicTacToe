@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import 'normalize.css'
 import './App.css';
+import Grid from "./Components/Grid";
+import {useSelector} from "react-redux";
+import {Store} from "redux";
 
-function App() {
+const App: React.FC = () => {
+    //@ts-ignore
+    const gameEnd = useSelector((state: Store) => state.endGame)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {
+            gameEnd === null
+            ? <Grid />
+            : gameEnd === 'DRAW' ? 'DRAW' : `The winner is ${gameEnd}`
+        }
     </div>
   );
 }
