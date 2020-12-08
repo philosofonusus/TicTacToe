@@ -19,6 +19,9 @@ npm start
 In future i plan to add:
 
 cool looking styling
+
 perceptron AI
+
 grid 3x3 - 16x16
+
 maybe multiplayer mode
