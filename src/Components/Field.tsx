@@ -28,7 +28,11 @@ const Field = <T extends { coordinate: number }>(props: T) => {
 
     return (
         <div className={`grid__field ${border()}`} onClick={put}>
-            <h1>{grid[props.coordinate]}</h1>
+            {
+                grid[props.coordinate]
+                ? <h1 className="appear">{grid[props.coordinate]}</h1>
+                : <h1> </h1>
+            }
         </div>
     )
 };
