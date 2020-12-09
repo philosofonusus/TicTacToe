@@ -5,12 +5,13 @@ import { useSelector, useDispatch } from "react-redux";
 const Field = <T extends { coordinate: number }>(props: T) => {
     const turn = useSelector((state: any) => state.turn)
     const grid = useSelector((state: any) => state.field)
+    const dispatch = useDispatch()
+
     const border = () => {
         return props.coordinate === 1 || props.coordinate === 7 ? 'bl br'
             : props.coordinate === 3 || props.coordinate === 5  ? 'bt bb'
                 : props.coordinate === 4 ? "bb bt br bl" : ""
     }
-    const dispatch = useDispatch()
 
     const put = (e: any) => {
         e.preventDefault()

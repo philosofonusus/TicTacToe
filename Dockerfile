@@ -5,7 +5,6 @@ WORKDIR /
 COPY package*.json ./
 
 RUN npm i
-
 RUN npm i -g serve
 
 COPY . .

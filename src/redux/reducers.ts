@@ -19,6 +19,7 @@ const counterReducer =
                 return state
         }
     }
+
 const fieldReducer =
     <T extends { type: string, payload: any }>
     (state: string[] = defaultFieldState, action: T): string[] => {

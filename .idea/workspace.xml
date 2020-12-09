@@ -4,6 +4,10 @@
     <list default="true" id="d2e0135e-90ad-42de-8f5f-67a6a414e337" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Field.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Field.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +70,10 @@
       <screen x="0" y="27" width="1280" height="773" />
     </state>
     <state x="226" y="138" width="824" height="539" key="IDE.errors.dialog/0.27.1280.773@0.27.1280.773" timestamp="1607380617957" />
+    <state x="304" y="177" key="run.anything.popup" timestamp="1607484014279">
+      <screen x="0" y="27" width="1280" height="773" />
+    </state>
+    <state x="304" y="177" key="run.anything.popup/0.27.1280.773@0.27.1280.773" timestamp="1607484014279" />
     <state x="303" y="121" width="672" height="678" key="search.everywhere.popup" timestamp="1607396686320">
       <screen x="0" y="27" width="1280" height="773" />
     </state>
