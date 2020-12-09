@@ -82,20 +82,3 @@ $grid-size: 300px;
         transform: scale(1);
     }
 }
-@keyframes win {
-    0%{
-        display: block;
-    }
-    25%{
-        display: none;
-    }
-    50%{
-        display: block;
-    }
-    75%{
-        display: none;
-    }
-    100%{
-        display: block;
-    }
-}
