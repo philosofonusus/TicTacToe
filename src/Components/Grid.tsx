@@ -6,7 +6,7 @@ import { setWinnerO, setWinnerX, setDraw } from "../redux/actions";
 import { useEffect } from "react";
 import { RootState } from '../redux/reducers'
 
-const Grid:React.FC = (): JSX.Element => {
+const Grid:React.FC = () => {
     const grid = useSelector((state: RootState) => state.field)
     const dispatch = useDispatch()
     const check = Check(grid)
