@@ -1,12 +1,13 @@
 import * as React from 'react'
 import Field from "./Field";
-import {Check} from "../Check";
-import {useDispatch, useSelector} from "react-redux";
-import {setWinnerO, setWinnerX, setDraw} from "../redux/actions";
-import {useEffect} from "react";
+import { Check } from "../Check";
+import { useDispatch, useSelector } from "react-redux";
+import { setWinnerO, setWinnerX, setDraw } from "../redux/actions";
+import { useEffect } from "react";
+import { RootState } from '../redux/reducers'
 
-const Grid:React.FC = () => {
-    const grid = useSelector((state: any) => state.field)
+const Grid:React.FC = (): JSX.Element => {
+    const grid = useSelector((state: RootState) => state.field)
     const dispatch = useDispatch()
     const check = Check(grid)
 

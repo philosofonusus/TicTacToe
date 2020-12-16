@@ -1,10 +1,11 @@
 import * as React from 'react'
 import { X_turn, O_turn, putX, putO } from "../redux/actions";
 import { useSelector, useDispatch } from "react-redux";
+import { RootState } from "../redux/reducers";
 
-const Field = <T extends { coordinate: number }>(props: T) => {
-    const turn = useSelector((state: any) => state.turn)
-    const grid = useSelector((state: any) => state.field)
+const Field =  <T extends { coordinate: number }>(props: T): JSX.Element => {
+    const turn = useSelector((state: RootState) => state.turn)
+    const grid = useSelector((state: RootState) => state.field)
     const dispatch = useDispatch()
 
     const border = () => {
@@ -13,7 +14,7 @@ const Field = <T extends { coordinate: number }>(props: T) => {
                 : props.coordinate === 4 ? "bb bt br bl" : ""
     }
 
-    const put = (e: any) => {
+    const put = (e: React.MouseEvent<HTMLDivElement>) => {
         e.preventDefault()
         if (!grid[props.coordinate]) {
             if (turn === "X") {

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2e0135e-90ad-42de-8f5f-67a6a414e337" name="Default Changelist" comment="" />
+    <list default="true" id="d2e0135e-90ad-42de-8f5f-67a6a414e337" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +51,7 @@
       <updated>1607379431854</updated>
       <workItem from="1607379432908" duration="12209000" />
       <workItem from="1607392505879" duration="6179000" />
+      <workItem from="1608074129410" duration="442000" />
     </task>
     <servers />
   </component>
@@ -59,6 +63,10 @@
       <screen x="0" y="27" width="1280" height="773" />
     </state>
     <state x="331" y="202" width="614" height="411" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1280.773@0.27.1280.773" timestamp="1607453487360" />
+    <state x="426" y="160" width="424" height="496" key="FileChooserDialogImpl" timestamp="1607492167108">
+      <screen x="0" y="27" width="1280" height="773" />
+    </state>
+    <state x="426" y="160" width="424" height="496" key="FileChooserDialogImpl/0.27.1280.773@0.27.1280.773" timestamp="1607492167108" />
     <state x="226" y="138" width="824" height="539" key="IDE.errors.dialog" timestamp="1607380617957">
       <screen x="0" y="27" width="1280" height="773" />
     </state>

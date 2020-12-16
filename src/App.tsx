@@ -1,10 +1,10 @@
 import React from 'react';
+import Grid from "./Components/Grid";
+import { useDispatch, useSelector } from "react-redux";
+import { gameReset } from "./redux/actions";
+import GameOver from "./Components/GameOver";
 import 'normalize.css'
 import './App.scss';
-import Grid from "./Components/Grid";
-import {useDispatch, useSelector} from "react-redux";
-import {gameReset} from "./redux/actions";
-import GameOver from "./Components/GameOver";
 
 const App: React.FC = () => {
     const gameEnd = useSelector((state: any) => state.endGame)
